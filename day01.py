@@ -11,3 +11,6 @@ left.sort()
 right.sort()
 ans1 = sum([abs(x - y) for x, y in zip(right, left)])
 print(ans1)
+
+ans2 = sum([x*right.count(x) for x in left])
+print(ans2)
